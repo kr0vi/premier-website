@@ -1,0 +1,123 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #f8f8f8;
+    position: relative;
+    padding-top: 1px;
+}
+#nav{
+    height: 11vh;
+    width: 100%;
+    /* background-color: red; */
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav h1{
+       /* background-color: rgb(84, 238, 89); */
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Impact;
+    letter-spacing: -2px;
+    font-size: 50px; 
+    font-weight: 400;
+}
+#nav h2{
+    /* background-color: rgb(84, 238, 89); */
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid black;
+    font-size: 22px;
+    font-weight: 600;
+}
+#nav h2:nth-last-child(1){
+    width: 10%;
+}
+#nav h2:nth-last-child(2){
+    width: 29%;
+}
+
+#center{
+    height:calc(100vh - (11vh + 51px));
+    width: 100%;
+    /* background-color: red; */
+    padding: 3vw;
+    position: relative;
+}
+
+#content{
+    /* background-color: blue; */
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#content video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#overlay{
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    /* background-color: rebeccapurple; */
+    bottom: 0;
+    padding: 0.8vw 3vw; 
+    color: white;
+}
+#over1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+        margin-bottom: 2vh;
+        /* background-color: red; */
+}
+#over1 h1{
+
+  font-size: 4vw;
+  font-weight: 400
+}
+#over1 h2{
+    /* background-color: blue; */
+    font-size: 1vw;
+    padding: 3vw 3vw;
+    border-radius: 50%;
+    border: 2px solid white;
+    transition: all ease-in 0.3s;
+
+}
+#over2{
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid white ;
+    margin-bottom: 15vw;
+    padding-top: 20px;
+}
+#over2 h4{
+    font-size: 1.3vw;
+    font-weight: 20;
+}
+#over2 i{
+scale: 2;
+}
