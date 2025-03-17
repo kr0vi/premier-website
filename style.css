@@ -323,7 +323,7 @@ body {
 #page4{
   height: 90%;
   width: 100%;
-  /* background-color: green;x` */
+  /* background-color: green; */
   padding: 5vw 8vw;
 }
 #page4 #image-placeholder{
@@ -377,6 +377,7 @@ body {
   justify-content: space-between;
   padding: 0 2vw;
   position: relative;
+  transition: background-color ease 0.3s;
 }
 .elem img{
   height: 120px;
@@ -390,6 +391,9 @@ body {
 .elem:hover img{
   opacity: 1;
   left: 24%;
+}
+.elem:hover{
+  background-color: #ececec;
 }
 .elem h4{
   font-size: 1.1vw;
