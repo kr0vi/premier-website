@@ -39,6 +39,27 @@ body {
   letter-spacing: -2px;
   font-size: 50px;
   font-weight: 400;
+  position: relative;
+}
+#nav h1::after {
+  content: "©";
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  position: absolute;
+  top: 25%;
+  left: 74%;
+}
+#nav h1::before {
+  content: "model management";
+  font-size: 0.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.548);
+  position: absolute;
+  top: 70%;
+  letter-spacing: 1px;
+  left: 44%;
 }
 #nav h2 {
   /* background-color: rgb(84, 238, 89); */
@@ -320,27 +341,27 @@ body {
   width: 100%;
   object-fit: cover;
 }
-#page4{
+#page4 {
   height: 90%;
   width: 100%;
   /* background-color: green; */
   padding: 5vw 8vw;
 }
-#page4 #image-placeholder{
+#page4 #image-placeholder {
   width: 100%;
   height: 100%;
   /* background-color: orange; */
 }
-#page4 #image-placeholder img{
+#page4 #image-placeholder img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   object-position: 2% 20%;
 }
-#page4 #image-placeholder{
+#page4 #image-placeholder {
   position: relative;
 }
-#page4 #image-placeholder h5{
+#page4 #image-placeholder h5 {
   position: absolute;
   top: 4%;
   right: 2%;
@@ -351,23 +372,23 @@ body {
   border: 1px solid black;
 }
 
-#page5{
+#page5 {
   height: 100%;
   width: 100%;
   /* background-color: red; */
   position: relative;
   padding: 5vw 4vw;
 }
-#page5>h1{
+#page5 > h1 {
   text-align: center;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   text-transform: uppercase;
   font-size: 3vw;
   font-weight: 900;
   letter-spacing: 3px;
   margin-bottom: 7vh;
 }
-.elem{
+.elem {
   height: 15.5vh;
   width: 100%;
   /* background-color: red; */
@@ -379,7 +400,7 @@ body {
   position: relative;
   transition: background-color ease 0.3s;
 }
-.elem img{
+.elem img {
   height: 120px;
   width: 120px;
   position: absolute;
@@ -388,33 +409,217 @@ body {
   opacity: 0;
   transition: all ease 0.7s;
 }
-.elem:hover img{
+.elem:hover img {
   opacity: 1;
   left: 24%;
 }
-.elem:hover{
+.elem:hover {
   background-color: #ececec;
 }
-.elem h4{
+.elem h4 {
   font-size: 1.1vw;
   text-transform: uppercase;
   width: 6%;
 }
-.elem .elem-part2{
+.elem .elem-part2 {
   width: 45%;
 }
 
-.elem .elem-part2 h1{
+.elem .elem-part2 h1 {
   font-size: 2.7vw;
   font-weight: 500;
 }
 
-.elem .elem-part2 h5{
+.elem .elem-part2 h5 {
   font-size: 0.8vw;
   font-weight: 600;
   text-transform: uppercase;
 }
 
-.elem:nth-last-child(1){
+.elem:nth-last-child(1) {
   border-bottom: 2px solid black;
+}
+
+#page6 {
+  height: 100%;
+  width: 100%;
+  padding: 5vw 5vw;
+}
+#page6-container {
+  height: 100%;
+  width: 100%;
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-area: 1vw;
+  padding: 0vw 3vw;
+}
+#page6-img-placeholder {
+  height: 100%;
+  width: 42%;
+  /* background-color: black; */
+}
+#page6-img-placeholder img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+#page6-right-content {
+  /* background-color: red; */
+  height: 100%;
+  width: 50%;
+}
+#page6-right-content #top-content {
+  height: 50%;
+  width: 100%;
+  padding: 1% 0%;
+}
+#page6-right-content #top-content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 3vw;
+  font-weight: 800;
+}
+#page6-right-content #top-content h3 {
+  font-size: 1.7rem;
+  margin-bottom: 2.1vw;
+  width: 50%;
+  font-weight: 550;
+}
+#page6-right-content #top-content p {
+  margin-bottom: 1vw;
+  width: 80%;
+}
+#page6-right-content #bottom-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: orange; */
+  height: 50%;
+}
+#page6-right-content #bottom-content img {
+  object-fit: cover;
+  /* display: none; */
+  height: 100%;
+  width: 45%;
+}
+#page7 {
+  height: 90%;
+  width: 100%;
+  /* background-color: green; */
+  padding: 5vw 8vw;
+}
+#page7 #image-placeholder {
+  width: 100%;
+  height: 100%;
+  /* background-color: orange; */
+}
+#page7 #image-placeholder img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: 0% 75%;
+}
+#page7 #image-placeholder {
+  position: relative;
+}
+#page7 #image-placeholder h5 {
+  position: absolute;
+  top: 4%;
+  right: 2%;
+  height: fit-content;
+  width: fit-content;
+  padding: 20px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+#footer {
+  height: 80%;
+  width: 100%;
+}
+#scroller {
+  margin-top: 10vh;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1vw;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+#scoller-container h1 {
+  flex-shrink: 0;
+  font-size: 4rem;
+  font-weight: 900;
+  color: transparent;
+  -webkit-text-stroke: 2px black;
+  text-transform: uppercase;
+  margin: 0 1vw;
+}
+#scoller-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  animation-name: scroller-anim;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes scroller-anim {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+#footer-foot {
+  /* background-color: red; */
+  margin-top: 10.2vw;
+  height: 60%;
+  width: 100%;
+  /* border-top: 1px solid black;
+  border-bottom: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer-foot h1 {
+  /* background-color: orange; */
+  height: 60%;
+  /* border: 1px solid black; */
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Impact;
+  letter-spacing: -2px;
+  font-size: 50px;
+  font-weight: 400;
+  position: relative;
+}
+#footer-foot h1::after {
+  content: "©";
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  position: absolute;
+  top: 39%;
+  left: 71%;
+}
+#footer-foot h1::before {
+  content: "model management";
+  font-size: 0.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.548);
+  position: absolute;
+  top: 58%;
+  letter-spacing: 1px;
+  left: 44%;
 }
