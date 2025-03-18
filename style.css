@@ -9,6 +9,7 @@ body {
   height: 100%;
   width: 100%;
   background-color: #f8f8f8;
+  /* cursor: none; */
 }
 #main {
   height: 100%;
@@ -16,6 +17,15 @@ body {
   background-color: #f8f8f8;
   position: relative;
   padding-top: 1px;
+}
+#cursor{
+  height: 40px;
+  width: 40px;
+  border: 2px solid black;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 99;
+  transition: all ease 0.19s;
 }
 #nav {
   height: 11vh;
